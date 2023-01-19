@@ -1,0 +1,4 @@
+docker build -it httpd .
+docker volume create mydockervolume
+docker run -d -p 80:80 --name webserver -v mydockervolume:/app httpd
+
